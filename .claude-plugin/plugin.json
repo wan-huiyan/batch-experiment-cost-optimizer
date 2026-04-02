@@ -1,0 +1,9 @@
+{
+  "name": "batch-experiment-cost-optimizer",
+  "description": "Minimize cloud batch experiment costs by checking for cached results before submitting new tasks. Supports GCS, S3, Azure Blob with incremental runs and cost estimation.",
+  "version": "1.0.0",
+  "author": { "name": "Huiyan Wan" },
+  "repository": "https://github.com/wan-huiyan/batch-experiment-cost-optimizer",
+  "license": "MIT",
+  "keywords": ["cloud-run", "aws-batch", "cost-optimization", "batch-experiment", "gcs-cache", "incremental-run"]
+}
