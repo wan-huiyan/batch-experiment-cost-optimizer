@@ -1,0 +1,10 @@
+{
+  "name": "batch-experiment-cost-optimizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimize cloud batch experiment costs by checking for cached results before submitting new tasks. Supports GCS, S3, Azure Blob with incremental runs and cost estimation.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "type": "module"
+}
