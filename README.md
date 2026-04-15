@@ -11,15 +11,26 @@ Claude: Checking GCS cache... 20 specs already have results. Submitting 28 new s
 
 ## Installation
 
-**Claude Code:**
+**Claude Code (plugin install — recommended):**
+```bash
+# Add the marketplace, then install the plugin
+claude plugin marketplace add wan-huiyan/batch-experiment-cost-optimizer
+claude plugin install batch-experiment-cost-optimizer@wan-huiyan-batch-experiment-cost-optimizer
+```
+
+**Claude Code (git clone):**
 ```bash
 git clone https://github.com/wan-huiyan/batch-experiment-cost-optimizer.git ~/.claude/skills/batch-experiment-cost-optimizer
 ```
 
-**Cursor:**
+**Cursor** (2.4+):
 ```bash
+# Per-project rule (most reliable)
 mkdir -p .cursor/rules
-cp ~/.claude/skills/batch-experiment-cost-optimizer/SKILL.md .cursor/rules/batch-experiment-cost-optimizer.mdc
+# Copy plugins/batch-experiment-cost-optimizer/SKILL.md content into .cursor/rules/batch-experiment-cost-optimizer.mdc with alwaysApply: true
+
+# Or via npx skills CLI
+npx skills add wan-huiyan/batch-experiment-cost-optimizer --global
 ```
 
 ## What You Get
